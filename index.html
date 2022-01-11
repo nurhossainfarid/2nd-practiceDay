@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Day</title>
+    <style>
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: lightcyan;
+            left: 90px;
+        }
+        nav > ol > li:hover > ol {
+            display: block;
+        }
+        #img1 {
+            position: relative;
+        }
+        .filed:hover > #img1 {
+            transform: rotate(-45deg);
+            transform-origin: top right;
+            transition: transform 1.5 ease-out;
+        }
+        .ball1 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 15px;
+            position: relative;
+            left: 230px;
+            top: 2px;
+        }
+        .ball1 {
+            transition: transform 3s ease ;
+        }
+        .filed:hover .ball1 {
+            transform: translateX(1000px) translateY(-300px);
+        }
+    </style>
+</head>
+<body>
+    <!-- create a ordered list -->
+    <nav id="nav">
+        <ol>
+            <li class="listItem-1">&#10094;span&#10095;</li>
+            <li class="listItem-2">&#10094;a&#10095;
+                <ol class="dropdown">
+                    <li class="dropdown1"><a href="">dropdown-1</a></li>
+                    <li class="dropdown2"><a href="">dropdown-2</a></li>
+                    <li class="dropdown3"><a href="">dropdown-3</a></li>
+                    <li class="dropdown4"><a href="">dropdown-4</a></li>
+                    <li class="dropdown5"><a href="">dropdown-5</a></li>
+                    <li class="dropdown6"><a href="">dropdown-6</a></li>
+                    <li class="dropdown7"><a href="">dropdown-7</a></li>
+                </ol>
+            </li>
+            <li class="listItem-3">&#10094;i&#10095;</li>
+            <li class="listItem-4">&#10094;br&#10095;</li>
+            <li class="listItem-5">&#10094;map&#10095;</li>
+            <li class="listItem-6">&#10094;img&#10095;</li>
+            <li class="listItem-7">&#10094;script&#10095;</li>
+            <p title="I am farid" style="overflow: hidden; text-overflow:ellipsis; width: 50px; border: 1px solid gray;white-space: nowrap;">Hi i am farid from bangladesh</p>
+        </ol>
+    </nav>
+    
+    <!-- create cricket animation -->
+    <div class="filed">
+        <img id="img1" src="golf-bat.png" alt="">
+        <!-- <div class="img2">
+            <img id="img2" src="golf-bat.png" alt="">
+        </div> -->
+        <div class="ball1"></div>
+    </div>
+</body>
+</html>
